@@ -3,16 +3,24 @@ import Layout from './components/Layout';
 import List from './pages/List';
 import React from 'react';
 import Product from './pages/Product';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
+import { isProduction } from './constants';
+
+const queryClient = new QueryClient()
 
 const App: React.FC = () => {
 
   return (
-    <Routes>
-      <Route path="/" element={<Layout/>}>
-        <Route index element={<List/>}/>
-        <Route path="bicycle/:slug" element={<Product/>}/>
-      </Route>
-    </Routes>
+    <QueryClientProvider client={queryClient}>
+      <Routes>
+        <Route path="/" element={<Layout/>}>
+          <Route index element={<List/>}/>
+          <Route path="bicycle/:slug" element={<Product/>}/>
+        </Route>
+      </Routes>
+      <ReactQueryDevtools initialIsOpen={isProduction} />
+    </QueryClientProvider>
   )
 }
 

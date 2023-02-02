@@ -14,9 +14,9 @@
 
 ## Generate Json
 
-https://app.json-generator.com/MwQlkG2ixCry
+https://app.json-generator.com
 
-```
+```javascript
 JG.repeat(12, 12, {
   id: JG.index() + 1,
   name: JG.random(
@@ -31,7 +31,7 @@ JG.repeat(12, 12, {
     'image1', 'image2', 'image3', 'image4'
   ))),
   color: _.uniq(JG.repeat(4, JG.random(
-    'red', 'blue', 'orange', 'gray', 'black', 'white', 'yellow'
+    'Red', 'Blue', 'Orange', 'Gray', 'Black', 'White', 'Yellow'
   ))),
   highlights: _.uniq(JG.repeat(4, JG.loremIpsum({ units: 'words', count: 6 }))),
   brand: JG.company(),

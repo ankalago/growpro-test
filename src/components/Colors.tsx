@@ -1,16 +1,26 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { RadioGroup } from '@headlessui/react';
 import { classNames, colors } from '../utils/utils';
 
 type Props = {
   color: string[]
+  setValue: Function
 }
 
-const Colors: React.FC<Props> = ({ color }) => {
-  const [selectedColor, setSelectedColor] = useState(color[0])
+const Colors: React.FC<Props> = ({ color, setValue }) => {
+  const [selectedColor, setSelectedColor] = useState<string>(color[0])
+
+  useEffect(() => {
+    setValue('color', selectedColor)
+  }, [])
+
+  const onChange = (value: string) => {
+    setSelectedColor(value)
+    setValue('color', value)
+  }
 
   return (
-    <RadioGroup value={selectedColor} onChange={setSelectedColor} className="mt-4">
+    <RadioGroup value={selectedColor} onChange={onChange} className="mt-4">
       <RadioGroup.Label className="sr-only"> Choose a color </RadioGroup.Label>
       <div className="flex items-center space-x-3">
         {color.map((item) => (

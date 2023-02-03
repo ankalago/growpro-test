@@ -1,8 +1,9 @@
-import { Booking } from '../../entities/booking';
+import { BookingType } from '../../entities/booking';
 import { createSlice } from '@reduxjs/toolkit';
 
-export const bookingEmptyState: Booking = {
+export const bookingEmptyState: BookingType = {
   days: 0,
+  cost: 0,
   color: "",
   size: "",
   name: "",
@@ -19,11 +20,13 @@ export const bookingSlice = createSlice({
   name: 'booking',
   initialState: bookingEmptyState,
   reducers: {
-    createBooking: (state, action) => action.payload,
-    setSelectDatesBooking: (state, action) => ({ ...state, selectDates: { ...action.payload } })
+    createBooking: (state, action) => ({ ...state, ...action.payload }),
+    setSelectDatesBooking: (state, action) => ({ ...state, selectDates: { ...action.payload } }),
+    setDaysBooking: (state, action) => ({ ...state, days: action.payload }),
+    setCostBooking: (state, action) => ({ ...state, cost: action.payload })
   }
 })
 
-export const { createBooking, setSelectDatesBooking } = bookingSlice.actions
+export const { createBooking, setSelectDatesBooking, setDaysBooking, setCostBooking } = bookingSlice.actions
 
 export default bookingSlice.reducer

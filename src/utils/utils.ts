@@ -13,7 +13,7 @@ export const colors = (color: string): Color => {
     case 'Black':
       return { name: color, class: 'bg-gray-900', selectedClass: 'ring-gray-900' }
     case 'Red':
-      return { name: color, class: 'bg-rose-600', selectedClass: 'ring-rose-700' }
+      return { name: color, class: 'bg-red-600', selectedClass: 'ring-red-700' }
     case 'Blue':
       return { name: color, class: 'bg-indigo-500', selectedClass: 'ring-indigo-600' }
     case 'Orange':

@@ -4,13 +4,14 @@ export type ValueBookingType = {
   value: number
   label: string
 };
-export type BookingType = {
+export type CalculateBookingType = {
   daysBooking: ValueBookingType
   calculateValue: ValueBookingType
 };
 
-export type Booking = {
+export type BookingType = {
   days: number
+  cost: number
   color: string
   size: string
   name: string

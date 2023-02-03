@@ -533,5 +533,21 @@
       "daysPromo": 5
     }
   ],
-  "booking": []
+  "booking": [
+    {
+      "days": 8,
+      "cost": 60,
+      "color": "Orange",
+      "size": "S",
+      "name": "Paúl Jácome",
+      "email": "ankalago@gmail.com",
+      "phone": "0998342013",
+      "selectDates": {
+        "startDate": "2023-2-3",
+        "endDate": "2023-2-10"
+      },
+      "createAt": 1675460673280,
+      "id": 1
+    }
+  ]
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import Breadcrumb from '../components/Breadcrumb';
 import Gallery from '../components/Gallery';
@@ -6,8 +6,9 @@ import Reviews from '../components/Reviews';
 import { useQueryDataBike } from '../hooks/useQueryData';
 import { useBooking } from '../hooks/useBooking';
 import Booking from '../components/Booking';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { AppStore } from '../store/store';
+import { setCostBooking } from '../store/states/booking';
 
 interface Props {
 }
@@ -17,6 +18,7 @@ const Bike: React.FC<Props> = () => {
   const { status, data, error } = useQueryDataBike(slug)
   const { calculateBooking } = useBooking()
   const bookingState = useSelector((store: AppStore) => store.booking)
+  const dispatch = useDispatch()
 
   if (status === 'loading') {
     return <span>Loading...</span>
@@ -29,6 +31,10 @@ const Bike: React.FC<Props> = () => {
   const [{ types, name, images, reviews, description, highlights, details, color, sizes }] = data
 
   const calculateBookingValue = calculateBooking(bookingState.selectDates, types);
+
+  useEffect(() => {
+    dispatch(setCostBooking(calculateBookingValue.calculateValue.value))
+  }, [calculateBookingValue.calculateValue.value])
 
   return (
     <div className="bg-white">

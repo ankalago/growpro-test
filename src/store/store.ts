@@ -1,9 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { Booking } from '../entities/booking';
+import { BookingType } from '../entities/booking';
 import bookingSlice from './states/booking';
 
 export interface AppStore {
-  booking: Booking
+  booking: BookingType
 }
 
 export default configureStore<AppStore>({

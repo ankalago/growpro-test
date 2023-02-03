@@ -1,18 +1,28 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { RadioGroup } from '@headlessui/react';
-import { classNames, colors } from '../utils/utils';
+import { classNames, } from '../utils/utils';
 import { SIZES } from '../constants';
 import StrokeIcon from '../images/StrokeIcon';
 
 type Props = {
   sizes: string[]
+  setValue: Function
 }
 
-const Colors: React.FC<Props> = ({ sizes }) => {
-  const [selectedSize, setSelectedSize] = useState(sizes[2])
+const Sizes: React.FC<Props> = ({ sizes, setValue }) => {
+  const [selectedSize, setSelectedSize] = useState<string>(sizes[sizes.length - 1])
+
+  useEffect(() => {
+    setValue('size', selectedSize)
+  }, [])
+
+  const onChange = (value: string) => {
+    setSelectedSize(value)
+    setValue('size', value)
+  }
 
   return (
-    <RadioGroup value={selectedSize} onChange={setSelectedSize} className="mt-4">
+    <RadioGroup value={selectedSize} onChange={onChange} className="mt-4">
       <RadioGroup.Label className="sr-only"> Choose a size </RadioGroup.Label>
       <div className="grid grid-cols-4 gap-4 sm:grid-cols-8 lg:grid-cols-4">
         {SIZES.filter(item => sizes.some(size => size === item)).map((item) => {
@@ -28,7 +38,7 @@ const Colors: React.FC<Props> = ({ sizes }) => {
                     ? 'bg-white shadow-sm text-gray-900 cursor-pointer'
                     : 'bg-gray-50 text-gray-200 cursor-not-allowed',
                   active ? 'ring-2 ring-indigo-500' : '',
-                  'group relative border rounded-md py-3 px-4 flex items-center justify-center text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6'
+                  'group relative border rounded-md py-3 px-4 flex items-center justify-center text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6',
                 )
               }
             >
@@ -62,4 +72,4 @@ const Colors: React.FC<Props> = ({ sizes }) => {
   )
 }
 
-export default Colors
+export default Sizes

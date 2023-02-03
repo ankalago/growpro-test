@@ -15,3 +15,6 @@ export const fetchDataBikeById = ({ queryKey }: QueryFunctionContext<string[]>):
 
 export const fetchDataType = (): Promise<Types[]> =>
   axios.get(`${BASE_ENDPOINT}/types`).then((response) => response.data)
+
+export const postDataBooking = (data: BikeType): Promise<any> =>
+  axios.post(`${BASE_ENDPOINT}/booking`, data ).then((response) => response.data)

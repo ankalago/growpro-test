@@ -25,15 +25,15 @@ JG.repeat(12, 12, {
     slug: JG.random(
         'Cube 123', 'Marin 456', 'Trek Marlin 6', 'GT 395', 'Raleigh 123', 'Chopper 345', 'Himiway 432', 'Super 73', 'Tower 672', 'Pathfinder 3', 'Giant G', 'Specialized E'
     ).toLowerCase().replace(" ", "-"),
-    description: JG.loremIpsum({ units: 'sentences', count: 6 }),
-    details: JG.loremIpsum({ units: 'paragraphs', count: 1 }),
+    description: JG.loremIpsum({units: 'sentences', count: 6}),
+    details: JG.loremIpsum({units: 'paragraphs', count: 1}),
     images: _.uniq(JG.repeat(5, JG.random(
         'image1', 'image2', 'image3', 'image4'
     ))),
     color: _.uniq(JG.repeat(4, JG.random(
         'Red', 'Blue', 'Orange', 'Gray', 'Black', 'White', 'Yellow'
     ))),
-    highlights: _.uniq(JG.repeat(4, JG.loremIpsum({ units: 'words', count: 6 }))),
+    highlights: _.uniq(JG.repeat(4, JG.loremIpsum({units: 'words', count: 6}))),
     brand: JG.company(),
     types: JG.random(
         {
@@ -62,6 +62,12 @@ JG.repeat(12, 12, {
     },
     createdAt: JG.date().getTime()
 });
+```
+
+## Install Dependencies
+
+```
+npm ci
 ```
 
 ## Start Server Data Base

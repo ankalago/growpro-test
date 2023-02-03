@@ -1,17 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useParams } from 'react-router-dom';
 import Breadcrumb from '../components/Breadcrumb';
 import Gallery from '../components/Gallery';
 import Reviews from '../components/Reviews';
-import Colors from '../components/Colors';
-import Sizes from '../components/Sizes';
 import { useQueryDataBike } from '../hooks/useQueryData';
-import Datepicker from 'react-tailwindcss-datepicker';
-import { DateValueType } from 'react-tailwindcss-datepicker/dist/types';
-import { Simulate } from 'react-dom/test-utils';
-import input = Simulate.input;
 import { useBooking } from '../hooks/useBooking';
-import dayjs from 'dayjs';
+import Booking from '../components/Booking';
+import { useSelector } from 'react-redux';
+import { AppStore } from '../store/store';
 
 interface Props {
 }
@@ -19,14 +15,8 @@ interface Props {
 const Bike: React.FC<Props> = () => {
   const { slug = "" } = useParams<{ slug: string }>();
   const { status, data, error } = useQueryDataBike(slug)
-  const [selectDates, setSelectDates] = useState<DateValueType>({
-    startDate: new Date(),
-    endDate: new Date()
-  });
   const { calculateBooking } = useBooking()
-
-  const handleValueChange = (newValue: DateValueType) =>
-    setSelectDates(newValue);
+  const bookingState = useSelector((store: AppStore) => store.booking)
 
   if (status === 'loading') {
     return <span>Loading...</span>
@@ -38,7 +28,7 @@ const Bike: React.FC<Props> = () => {
 
   const [{ types, name, images, reviews, description, highlights, details, color, sizes }] = data
 
-  const calculateBookingValue = calculateBooking(selectDates, types);
+  const calculateBookingValue = calculateBooking(bookingState.selectDates, types);
 
   return (
     <div className="bg-white">
@@ -69,77 +59,7 @@ const Bike: React.FC<Props> = () => {
             {/* Reviews */}
             <Reviews reviews={reviews} />
 
-            <form className="mt-5">
-              {/* Colors */}
-              <div>
-                <h3 className="text-sm font-medium text-gray-900">Color</h3>
-                <Colors color={color} />
-              </div>
-
-              {/* Sizes */}
-              <div className="mt-5">
-                <div className="flex items-center justify-between">
-                  <h3 className="text-sm font-medium text-gray-900">Size</h3>
-                </div>
-
-                <Sizes sizes={sizes} />
-              </div>
-
-              {/* Name */}
-              <div className="mt-5">
-                <h3 className="text-sm font-medium text-gray-900">Full Name</h3>
-                <input
-                  type="text"
-                  name="name"
-                  id="name"
-                  className="mt-4 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-                />
-              </div>
-
-              {/* Emails */}
-              <div className="mt-5">
-                <h3 className="text-sm font-medium text-gray-900">Email address</h3>
-                <input
-                  type="email"
-                  name="email-address"
-                  id="email-address"
-                  autoComplete="email"
-                  className="mt-4 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-                />
-              </div>
-
-              {/* Phone */}
-              <div className="mt-5">
-                <h3 className="text-sm font-medium text-gray-900">Phone</h3>
-                <input
-                  type="tel"
-                  name="phone"
-                  id="phone"
-                  className="mt-4 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-                />
-              </div>
-
-              {/* Dates */}
-              <div className="mt-5">
-                <h3 className="text-sm font-medium text-gray-900">Dates</h3>
-                <Datepicker
-                  primaryColor={"indigo"}
-                  value={selectDates}
-                  minDate={new Date(dayjs().subtract(1, 'day').toDate())}
-                  onChange={handleValueChange}
-                  placeholder="Select Dates"
-                  inputClassName="font-normal dark:bg-white dark:border dark:shadow-sm dark:text-gray-900 dark:border-gray-200"
-                  containerClassName="mt-4"
-                />
-              </div>
-
-              <button
-                type="submit"
-                className="mt-10 flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 py-3 px-8 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-              >
-                Booking
-              </button>
-            </form>
+            <Booking color={color} sizes={sizes}/>
           </div>
 
           {/* Description and details */}

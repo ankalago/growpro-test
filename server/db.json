@@ -28,7 +28,8 @@
       "types": {
         "id": 2,
         "value": "electrics",
-        "label": "Bicicletas eléctricas"
+        "label": "Bicicletas eléctricas",
+        "daysPromo": 0
       },
       "sizes": [
         "3XL",
@@ -69,7 +70,8 @@
       "types": {
         "id": 2,
         "value": "electrics",
-        "label": "Bicicletas eléctricas"
+        "label": "Bicicletas eléctricas",
+        "daysPromo": 0
       },
       "sizes": [
         "3XL",
@@ -110,7 +112,8 @@
       "types": {
         "id": 2,
         "value": "electrics",
-        "label": "Bicicletas eléctricas"
+        "label": "Bicicletas eléctricas",
+        "daysPromo": 0
       },
       "sizes": [
         "L",
@@ -151,7 +154,8 @@
       "types": {
         "id": 2,
         "value": "electrics",
-        "label": "Bicicletas eléctricas"
+        "label": "Bicicletas eléctricas",
+        "daysPromo": 0
       },
       "sizes": [
         "XXS",
@@ -194,7 +198,8 @@
       "types": {
         "id": 1,
         "value": "normal",
-        "label": "Bicicletas normales"
+        "label": "Bicicletas normales",
+        "daysPromo": 3
       },
       "sizes": [
         "S",
@@ -237,7 +242,8 @@
       "types": {
         "id": 1,
         "value": "normal",
-        "label": "Bicicletas normales"
+        "label": "Bicicletas normales",
+        "daysPromo": 3
       },
       "sizes": [
         "2XL",
@@ -279,7 +285,8 @@
       "types": {
         "id": 1,
         "value": "normal",
-        "label": "Bicicletas normales"
+        "label": "Bicicletas normales",
+        "daysPromo": 3
       },
       "sizes": [
         "L",
@@ -319,7 +326,8 @@
       "types": {
         "id": 1,
         "value": "normal",
-        "label": "Bicicletas normales"
+        "label": "Bicicletas normales",
+        "daysPromo": 3
       },
       "sizes": [
         "2XL",
@@ -361,7 +369,8 @@
       "types": {
         "id": 3,
         "value": "old",
-        "label": "Bicicletas antiguas"
+        "label": "Bicicletas antiguas",
+        "daysPromo": 5
       },
       "sizes": [
         "3XL",
@@ -402,7 +411,8 @@
       "types": {
         "id": 3,
         "value": "old",
-        "label": "Bicicletas antiguas"
+        "label": "Bicicletas antiguas",
+        "daysPromo": 5
       },
       "sizes": [
         "M",
@@ -445,7 +455,8 @@
       "types": {
         "id": 3,
         "value": "old",
-        "label": "Bicicletas antiguas"
+        "label": "Bicicletas antiguas",
+        "daysPromo": 5
       },
       "sizes": [
         "S",
@@ -486,7 +497,8 @@
       "types": {
         "id": 3,
         "value": "old",
-        "label": "Bicicletas antiguas"
+        "label": "Bicicletas antiguas",
+        "daysPromo": 5
       },
       "sizes": [
         "XXS",
@@ -505,17 +517,20 @@
     {
       "id": 1,
       "value": "normal",
-      "label": "Bicicletas normales"
+      "label": "Bicicletas normales",
+      "daysPromo": 3
     },
     {
       "id": 2,
       "value": "electrics",
-      "label": "Bicicletas eléctricas"
+      "label": "Bicicletas eléctricas",
+      "daysPromo": 0
     },
     {
       "id": 3,
       "value": "old",
-      "label": "Bicicletas antiguas"
+      "label": "Bicicletas antiguas",
+      "daysPromo": 5
     }
   ],
   "booking": []

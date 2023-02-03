@@ -25,9 +25,9 @@ const Reviews: React.FC<Props> = ({reviews}) => {
           ))}
         </div>
         <p className="sr-only">{reviews.average} out of 5 stars</p>
-        <span className="ml-3 text-sm font-medium text-indigo-600 hover:text-indigo-500">
-                  {reviews.totalCount} reviews
-                </span>
+        <span className="ml-3 text-sm font-medium text-indigo-500 hover:text-indigo-500">
+          {reviews.totalCount} reviews
+        </span>
       </div>
     </div>
   )

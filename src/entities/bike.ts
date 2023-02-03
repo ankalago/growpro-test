@@ -24,4 +24,5 @@ export type Types = {
   id: number
   value: string
   label: string
+  daysPromo: number
 }

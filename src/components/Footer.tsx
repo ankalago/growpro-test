@@ -2,6 +2,7 @@ import React from 'react';
 import { useQueryDataBikes, useQueryDataTypes } from '../hooks/useQueryData';
 import { Link } from 'react-router-dom';
 import { shuffledItems } from '../utils/utils';
+import { BikeType } from '../entities/bike';
 
 const Footer: React.FC = () => {
   const { data: dataTypes } = useQueryDataTypes()
@@ -13,7 +14,7 @@ const Footer: React.FC = () => {
         <div className="mx-auto max-w-7xl px-8">
           <div className="grid grid-cols-3 gap-y-10 gap-x-8 py-16">
             <div className="col-start-2 grid grid-cols-4 col-span-2 gap-x-8">
-              {shuffledItems(dataBikes || []).slice(0, 4).map((bike) => (
+              {shuffledItems<BikeType>(dataBikes || []).slice(0, 4).map((bike) => (
                 <div key={bike.name} className="group relative text-base sm:text-sm">
                   <div className="aspect-w-1 aspect-h-1 overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
                     <img

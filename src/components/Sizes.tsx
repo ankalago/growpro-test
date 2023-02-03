@@ -15,7 +15,7 @@ const Colors: React.FC<Props> = ({ sizes }) => {
     <RadioGroup value={selectedSize} onChange={setSelectedSize} className="mt-4">
       <RadioGroup.Label className="sr-only"> Choose a size </RadioGroup.Label>
       <div className="grid grid-cols-4 gap-4 sm:grid-cols-8 lg:grid-cols-4">
-        {SIZES.map((item) => {
+        {SIZES.filter(item => sizes.some(size => size === item)).map((item) => {
           const inStock = sizes.some(size => size === item)
           return (
             <RadioGroup.Option
@@ -49,8 +49,8 @@ const Colors: React.FC<Props> = ({ sizes }) => {
                       aria-hidden="true"
                       className="pointer-events-none absolute -inset-px rounded-md border-2 border-gray-200"
                     >
-                                <StrokeIcon />
-                              </span>
+                      <StrokeIcon/>
+                    </span>
                   )}
                 </>
               )}

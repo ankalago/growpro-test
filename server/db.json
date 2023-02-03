@@ -193,8 +193,8 @@
       "brand": "Omatom",
       "types": {
         "id": 1,
-        "value": "electrics",
-        "label": "Bicicletas eléctricas"
+        "value": "normal",
+        "label": "Bicicletas normales"
       },
       "sizes": [
         "S",
@@ -236,8 +236,8 @@
       "brand": "Ginkle",
       "types": {
         "id": 1,
-        "value": "electrics",
-        "label": "Bicicletas eléctricas"
+        "value": "normal",
+        "label": "Bicicletas normales"
       },
       "sizes": [
         "2XL",
@@ -278,8 +278,8 @@
       "brand": "Pawnagra",
       "types": {
         "id": 1,
-        "value": "electrics",
-        "label": "Bicicletas eléctricas"
+        "value": "normal",
+        "label": "Bicicletas normales"
       },
       "sizes": [
         "L",
@@ -318,8 +318,8 @@
       "brand": "Zilodyne",
       "types": {
         "id": 1,
-        "value": "electrics",
-        "label": "Bicicletas eléctricas"
+        "value": "normal",
+        "label": "Bicicletas normales"
       },
       "sizes": [
         "2XL",
@@ -504,8 +504,8 @@
   "types": [
     {
       "id": 1,
-      "value": "electrics",
-      "label": "Bicicletas eléctricas"
+      "value": "normal",
+      "label": "Bicicletas normales"
     },
     {
       "id": 2,

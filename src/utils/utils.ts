@@ -23,3 +23,9 @@ export const colors = (color: string): Color => {
       return { name: color, class: 'bg-slate-100', selectedClass: 'ring-slate-300' }
   }
 }
+
+export const shuffledItems = <T>(array: T[]) => {
+  return array.sort(() =>  {
+    return Math.random() - 0.5;
+  })
+};

@@ -7,7 +7,14 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 import { isProduction } from './constants';
 
-const queryClient = new QueryClient()
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      refetchOnWindowFocus: false,
+      staleTime: Infinity,
+    },
+  },
+});
 
 const App: React.FC = () => {
 
@@ -16,6 +23,7 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/" element={<Layout/>}>
           <Route index element={<List/>}/>
+          <Route path="type/:slug" element={<List/>}/>
           <Route path="bicycle/:slug" element={<Bike/>}/>
         </Route>
       </Routes>

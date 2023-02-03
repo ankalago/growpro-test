@@ -1,24 +1,18 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import { useQuery } from '@tanstack/react-query';
-import { QUERY_KEY_BIKE } from '../constants';
-import { fetchDataById } from '../services';
-import { BikeType } from '../entities/bike';
 import Breadcrumb from '../components/Breadcrumb';
 import Gallery from '../components/Gallery';
 import Reviews from '../components/Reviews';
 import Colors from '../components/Colors';
 import Sizes from '../components/Sizes';
+import { useQueryDataBike } from '../hooks/useQueryData';
 
 interface Props {
 }
 
 const Bike: React.FC<Props> = () => {
   const { slug = "" } = useParams<{ slug: string }>();
-  const { status, data, error } = useQuery<unknown, unknown, BikeType[], string[]>({
-    queryKey: [QUERY_KEY_BIKE, slug],
-    queryFn: fetchDataById
-  })
+  const { status, data, error } = useQueryDataBike(slug)
 
   if (status === 'loading') {
     return <span>Loading...</span>

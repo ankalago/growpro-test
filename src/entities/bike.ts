@@ -1,9 +1,9 @@
-type Reviews = {
+export type ReviewsType = {
   average: number
   totalCount: number
 };
 
-export type Bike = {
+export type BikeType = {
   id: number
   name: string
   slug: string
@@ -13,14 +13,14 @@ export type Bike = {
   color: string[]
   highlights: string[]
   brand: string
-  types: number
+  types: Types
   sizes: string[]
   price: number
-  reviews: Reviews
+  reviews: ReviewsType
   createdAt: number
 }
 
-export type Type = {
+export type Types = {
   id: number
   value: string
   label: string

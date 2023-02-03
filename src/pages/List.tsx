@@ -1,13 +1,13 @@
 import React from 'react';
 import { useQuery } from '@tanstack/react-query';
-import { QUERY_KEY } from '../constants';
+import { QUERY_KEY_BIKES } from '../constants';
 import { fetchData } from '../services';
 
 interface Props {
 }
 
 const List: React.FC<Props> = () => {
-  const { status, data, error } = useQuery({ queryKey: [QUERY_KEY], queryFn: fetchData })
+  const { status, data, error } = useQuery({ queryKey: [QUERY_KEY_BIKES], queryFn: fetchData })
 
   if (status === 'loading') {
     return <span>Loading...</span>

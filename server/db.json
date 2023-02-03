@@ -2,8 +2,8 @@
   "bicycles": [
     {
       "id": 1,
-      "name": "Trek Marlin 6",
-      "slug": "gt-395",
+      "name": "Cube 123",
+      "slug": "cube-123",
       "description": "Occaecat exercitation reprehenderit laborum anim quis ad occaecat laboris do. Pariatur aliquip sunt incididunt enim quis consequat mollit occaecat deserunt do ipsum irure aute aliqua. Eu ex cillum cupidatat duis Lorem et fugiat officia cupidatat fugiat voluptate. Cillum sint non sint ea anim amet officia ut occaecat sint. Consectetur cillum minim nulla officia aliquip dolor mollit ad eiusmod sit qui do aute. Aliquip sint do amet quis in in occaecat.",
       "details": "Labore cupidatat non ullamco culpa nostrud duis ut. Ea veniam irure irure ut labore adipisicing eiusmod ex deserunt laboris eiusmod laboris in. Elit nostrud cupidatat aliquip proident reprehenderit esse proident labore dolore excepteur. Tempor in laborum magna cillum aute laboris excepteur excepteur adipisicing culpa. Et nulla magna velit enim non tempor incididunt dolor id Lorem anim proident incididunt. Non Lorem proident Lorem qui adipisicing occaecat cupidatat irure ut ipsum.",
       "images": [
@@ -25,7 +25,11 @@
         "elit eu minim id sit proident"
       ],
       "brand": "Sensate",
-      "types": 2,
+      "types": {
+        "id": 2,
+        "value": "electrics",
+        "label": "Bicicletas eléctricas"
+      },
       "sizes": [
         "3XL",
         "S",
@@ -40,8 +44,8 @@
     },
     {
       "id": 2,
-      "name": "Raleigh 123",
-      "slug": "tower-672",
+      "name": "Marin 456",
+      "slug": "marin-456",
       "description": "Cillum tempor quis reprehenderit officia officia. Velit culpa dolore magna laboris ea ad est anim ea deserunt irure anim. Adipisicing magna ut adipisicing labore sint sunt ea nostrud. Laboris non aliquip non Lorem do consequat nisi dolore ipsum veniam eiusmod voluptate aliqua. Ullamco minim velit deserunt do commodo ea laborum eu id. Eiusmod eiusmod anim nulla deserunt adipisicing ullamco aliquip proident quis amet.",
       "details": "Officia ut ipsum adipisicing aliqua ut labore nostrud consequat excepteur minim ut qui. Anim sit labore in voluptate fugiat sit. Voluptate consectetur elit consectetur nulla. Ea ex qui eu proident mollit deserunt voluptate Lorem id culpa sunt officia fugiat nulla. Ea deserunt in occaecat id. Non fugiat cupidatat ex nisi aute reprehenderit cupidatat Lorem in ipsum ea minim.",
       "images": [
@@ -62,7 +66,11 @@
         "elit nulla voluptate quis sint ad"
       ],
       "brand": "Ewaves",
-      "types": 2,
+      "types": {
+        "id": 2,
+        "value": "electrics",
+        "label": "Bicicletas eléctricas"
+      },
       "sizes": [
         "3XL",
         "XL",
@@ -77,8 +85,8 @@
     },
     {
       "id": 3,
-      "name": "Tower 672",
-      "slug": "chopper-345",
+      "name": "Trek Marlin 6",
+      "slug": "Trek-marlin-6",
       "description": "Officia commodo voluptate nulla velit cupidatat id exercitation esse laborum mollit esse sint. Exercitation deserunt dolore irure occaecat. Anim in laboris nostrud culpa proident culpa qui duis amet quis. Adipisicing in anim sint veniam voluptate ad nostrud. Qui ad veniam cillum occaecat laborum. Qui dolor sint Lorem occaecat minim eiusmod minim aute laboris Lorem reprehenderit aliquip.",
       "details": "Amet deserunt elit ad proident. Proident incididunt nisi consequat cillum mollit. Occaecat pariatur tempor amet magna. Deserunt fugiat ex exercitation excepteur dolor laborum ipsum tempor sit in reprehenderit. Id elit ad est adipisicing nostrud incididunt. Cillum enim deserunt cupidatat ex sunt magna id officia occaecat incididunt elit. Ex ut anim ullamco eu enim.",
       "images": [
@@ -99,7 +107,11 @@
         "consectetur irure ex excepteur irure enim"
       ],
       "brand": "Assurity",
-      "types": 2,
+      "types": {
+        "id": 2,
+        "value": "electrics",
+        "label": "Bicicletas eléctricas"
+      },
       "sizes": [
         "L",
         "2XL",
@@ -114,8 +126,8 @@
     },
     {
       "id": 4,
-      "name": "Raleigh 123",
-      "slug": "super-73",
+      "name": "GT 395",
+      "slug": "gt-395",
       "description": "Consequat quis et ullamco nostrud ipsum Lorem nisi exercitation officia nulla irure amet. Eiusmod laborum dolore velit labore ad labore non commodo. Ipsum tempor est velit qui duis Lorem tempor ullamco mollit consequat adipisicing. Voluptate excepteur est ut eiusmod deserunt id Lorem non. Aliquip non consectetur elit velit elit pariatur nostrud dolore sint veniam exercitation do. Nulla sit ipsum nulla aliqua voluptate amet.",
       "details": "Commodo anim incididunt ad ut ipsum ad dolor laborum. Cillum occaecat laborum est cupidatat esse aliquip sint consequat nisi pariatur pariatur eiusmod labore sint. Officia in ut proident nisi irure veniam dolore adipisicing esse velit occaecat sint incididunt. Eiusmod culpa irure excepteur aliqua amet do. Laboris labore Lorem elit veniam id ad ipsum occaecat labore tempor nulla consequat.",
       "images": [
@@ -136,7 +148,11 @@
         "consectetur labore cupidatat quis aute qui"
       ],
       "brand": "Stelaecor",
-      "types": 2,
+      "types": {
+        "id": 2,
+        "value": "electrics",
+        "label": "Bicicletas eléctricas"
+      },
       "sizes": [
         "XXS",
         "XL",
@@ -152,8 +168,8 @@
     },
     {
       "id": 5,
-      "name": "Super 73",
-      "slug": "chopper-345",
+      "name": "Raleigh 123",
+      "slug": "raleigh-123",
       "description": "Sunt laborum laborum elit Lorem nostrud deserunt eiusmod ea sit cillum. Irure enim laborum dolore consequat magna nisi incididunt ipsum voluptate voluptate adipisicing consectetur magna esse. Minim deserunt nulla consequat officia amet fugiat commodo adipisicing consequat quis do ullamco aliqua. Minim aliqua sint ex do anim fugiat adipisicing esse excepteur tempor reprehenderit commodo aliquip. Fugiat veniam sunt eu et ea proident labore consequat sunt reprehenderit cupidatat. Deserunt aliqua id esse ut magna veniam nisi amet exercitation officia.",
       "details": "Laboris id occaecat cupidatat exercitation enim velit dolore in est proident officia enim amet. Veniam commodo nostrud Lorem excepteur eu occaecat voluptate quis nisi excepteur. Amet laboris in ut mollit. Elit aute exercitation pariatur nisi sint ex anim consequat. Cillum et voluptate occaecat consectetur nisi irure occaecat deserunt aliquip velit sunt sit magna commodo.",
       "images": [
@@ -175,7 +191,11 @@
         "dolor ad sint ut consequat ullamco"
       ],
       "brand": "Omatom",
-      "types": 1,
+      "types": {
+        "id": 1,
+        "value": "electrics",
+        "label": "Bicicletas eléctricas"
+      },
       "sizes": [
         "S",
         "XL",
@@ -191,8 +211,8 @@
     },
     {
       "id": 6,
-      "name": "Marin 456",
-      "slug": "trek-marlin 6",
+      "name": "Chopper 345",
+      "slug": "chopper-345",
       "description": "Ad consequat quis anim in excepteur reprehenderit reprehenderit nulla mollit magna. Quis deserunt mollit in Lorem nisi reprehenderit non aute non labore officia. Ut labore Lorem aute pariatur pariatur aliquip dolor enim ullamco veniam cillum sunt dolore non. Qui officia consequat deserunt id est et quis cupidatat qui. Ea culpa id elit dolore amet esse cupidatat excepteur aute commodo id consectetur fugiat. Pariatur deserunt qui sunt minim nisi cupidatat consectetur nulla quis.",
       "details": "Laboris sit nisi cillum ad excepteur. Veniam nisi laboris pariatur occaecat velit labore officia eu voluptate id tempor. Ullamco aute velit exercitation eu in. Deserunt proident deserunt duis tempor consectetur laborum. Incididunt qui deserunt aliquip qui deserunt culpa nisi laboris laborum amet deserunt exercitation esse. Commodo cupidatat qui veniam ullamco aliquip Lorem nostrud non ullamco commodo eiusmod velit culpa sint.",
       "images": [
@@ -214,7 +234,11 @@
         "anim esse ullamco ut anim irure"
       ],
       "brand": "Ginkle",
-      "types": 1,
+      "types": {
+        "id": 1,
+        "value": "electrics",
+        "label": "Bicicletas eléctricas"
+      },
       "sizes": [
         "2XL",
         "L",
@@ -229,8 +253,8 @@
     },
     {
       "id": 7,
-      "name": "Super 73",
-      "slug": "chopper-345",
+      "name": "Himiway 432",
+      "slug": "himiway-432",
       "description": "Do veniam ut labore quis id id ipsum adipisicing sint adipisicing ea fugiat commodo labore. Consequat anim ut excepteur commodo laboris sunt id commodo fugiat adipisicing. Minim cupidatat esse Lorem velit nisi commodo esse consectetur sit cillum cupidatat et mollit proident. Reprehenderit qui proident ut occaecat qui et duis ipsum esse magna aute pariatur magna mollit. Velit occaecat ut commodo culpa cupidatat est do culpa qui ad Lorem eiusmod ad cupidatat. Laborum mollit officia ullamco sit non.",
       "details": "Do adipisicing ullamco Lorem culpa amet magna enim adipisicing voluptate esse et mollit commodo laborum. Sunt dolor labore ullamco adipisicing cupidatat fugiat non cillum ea est minim laborum quis do. Anim enim pariatur occaecat sit ex sunt occaecat. Eiusmod culpa exercitation elit occaecat non amet mollit ad velit deserunt adipisicing excepteur amet labore.",
       "images": [
@@ -252,7 +276,11 @@
         "aute reprehenderit do pariatur aliquip enim"
       ],
       "brand": "Pawnagra",
-      "types": 1,
+      "types": {
+        "id": 1,
+        "value": "electrics",
+        "label": "Bicicletas eléctricas"
+      },
       "sizes": [
         "L",
         "S"
@@ -267,7 +295,7 @@
     {
       "id": 8,
       "name": "Super 73",
-      "slug": "himiway-432",
+      "slug": "super-73",
       "description": "Ullamco id quis anim pariatur magna aliqua ea nostrud laboris officia velit do minim nostrud. Non Lorem aliqua id laborum nostrud aute cupidatat. Proident anim excepteur ea laborum id amet cillum cillum ex. Magna exercitation reprehenderit commodo enim laborum magna culpa incididunt aute minim tempor. Cupidatat fugiat anim esse nostrud ad consectetur magna. Aute exercitation dolor ea ea.",
       "details": "Aliquip consectetur cillum laborum est nulla sunt est quis enim. Nostrud incididunt enim irure voluptate nostrud officia et reprehenderit cillum commodo laboris laboris velit. Cillum est ad ut qui eu. Cillum elit proident velit in laborum et ea non aliquip eu cillum enim et nulla.",
       "images": [
@@ -288,7 +316,11 @@
         "ut adipisicing excepteur enim amet laboris"
       ],
       "brand": "Zilodyne",
-      "types": 1,
+      "types": {
+        "id": 1,
+        "value": "electrics",
+        "label": "Bicicletas eléctricas"
+      },
       "sizes": [
         "2XL",
         "XXS",
@@ -304,12 +336,15 @@
     },
     {
       "id": 9,
-      "name": "GT 395",
-      "slug": "chopper-345",
+      "name": "Tower 672",
+      "slug": "tower-672",
       "description": "Proident pariatur non ex elit incididunt culpa aliqua ea incididunt in est dolor ea proident. Ullamco magna pariatur veniam incididunt incididunt eiusmod magna eu nulla minim qui officia elit. Velit amet excepteur esse ea veniam ea quis. Ad ex veniam aute consequat fugiat excepteur consectetur. Anim eiusmod incididunt nisi mollit cupidatat excepteur ea cillum laborum est. Et nostrud cillum velit officia irure.",
       "details": "Magna sit voluptate ad deserunt non sit labore dolor et. Proident tempor veniam cupidatat tempor ullamco ad incididunt incididunt id cillum. Adipisicing Lorem reprehenderit minim labore. Minim eiusmod laboris eu non.",
       "images": [
-        "/images/bikes/vintage/bike-vintage-1.jpg"
+        "/images/bikes/vintage/bike-vintage-1-1.jpg",
+        "/images/bikes/vintage/bike-vintage-1-2.jpg",
+        "/images/bikes/vintage/bike-vintage-1-3.jpg",
+        "/images/bikes/vintage/bike-vintage-1-4.jpg"
       ],
       "color": [
         "Orange",
@@ -323,7 +358,11 @@
         "anim occaecat ipsum ut sit in"
       ],
       "brand": "Niquent",
-      "types": 3,
+      "types": {
+        "id": 3,
+        "value": "old",
+        "label": "Bicicletas antiguas"
+      },
       "sizes": [
         "3XL",
         "XL"
@@ -337,12 +376,15 @@
     },
     {
       "id": 10,
-      "name": "Himiway 432",
-      "slug": "marin-456",
+      "name": "Pathfinder 3",
+      "slug": "pathfinder-3",
       "description": "Laborum ullamco duis ex enim labore ullamco id. Ipsum non nostrud fugiat pariatur. Mollit sunt dolore in ullamco elit ad proident commodo dolor. Mollit ea eu elit excepteur esse officia culpa ex amet. Reprehenderit elit nisi duis duis qui. Pariatur quis elit ullamco in.",
       "details": "Minim Lorem elit esse laborum elit nulla nulla minim proident anim ut quis. Ex sit fugiat pariatur in veniam aliquip reprehenderit commodo esse laboris fugiat esse. Anim incididunt nostrud quis dolor. Ipsum ad pariatur proident id deserunt aute ad officia. Cillum nulla eu cillum id non irure aliqua anim laborum commodo occaecat labore cillum. Pariatur officia commodo aute quis consectetur veniam cupidatat anim elit exercitation dolor.",
       "images": [
-        "/images/bikes/vintage/bike-vintage-2.jpg"
+        "/images/bikes/vintage/bike-vintage-2-1.jpg",
+        "/images/bikes/vintage/bike-vintage-2-2.jpg",
+        "/images/bikes/vintage/bike-vintage-2-3.jpg",
+        "/images/bikes/vintage/bike-vintage-2-4.jpg"
       ],
       "color": [
         "Black",
@@ -357,7 +399,11 @@
         "laboris incididunt occaecat nisi reprehenderit tempor"
       ],
       "brand": "Verbus",
-      "types": 3,
+      "types": {
+        "id": 3,
+        "value": "old",
+        "label": "Bicicletas antiguas"
+      },
       "sizes": [
         "M",
         "XXS",
@@ -373,12 +419,15 @@
     },
     {
       "id": 11,
-      "name": "Chopper 345",
-      "slug": "cube-123",
+      "name": "Giant G",
+      "slug": "giant-g",
       "description": "Aliquip excepteur cupidatat est est sint cillum. Nulla occaecat do pariatur magna. Nostrud ipsum ut eu ullamco qui laboris laborum et nostrud est incididunt. Excepteur proident eu est ad proident incididunt nostrud nulla ad consectetur commodo duis ut. Ad excepteur ea do eu ipsum ad nisi non. Commodo cupidatat eiusmod sunt sunt cupidatat proident ipsum laborum in nulla laboris.",
       "details": "Occaecat sint elit culpa adipisicing nisi ullamco. Enim fugiat mollit anim eiusmod duis incididunt velit cillum aliqua proident est elit nisi. Do cillum sunt culpa cupidatat voluptate exercitation minim tempor eiusmod magna deserunt sit magna. Tempor laborum enim proident officia anim eu ut fugiat sint veniam nostrud ad aliqua quis. Culpa nostrud consectetur consequat deserunt in amet aliquip fugiat dolore fugiat deserunt. Qui id quis et consequat commodo cupidatat fugiat id ullamco nostrud dolor id cillum reprehenderit.",
       "images": [
-        "/images/bikes/vintage/bike-vintage-3.jpg"
+        "/images/bikes/vintage/bike-vintage-3-1.jpg",
+        "/images/bikes/vintage/bike-vintage-3-2.jpg",
+        "/images/bikes/vintage/bike-vintage-3-3.jpg",
+        "/images/bikes/vintage/bike-vintage-3-4.jpg"
       ],
       "color": [
         "Yellow",
@@ -393,7 +442,11 @@
         "qui excepteur sint tempor do ad"
       ],
       "brand": "Ezentia",
-      "types": 3,
+      "types": {
+        "id": 3,
+        "value": "old",
+        "label": "Bicicletas antiguas"
+      },
       "sizes": [
         "S",
         "3XL"
@@ -407,12 +460,15 @@
     },
     {
       "id": 12,
-      "name": "Super 73",
-      "slug": "chopper-345",
+      "name": "Specialized E",
+      "slug": "specialized-e",
       "description": "Laboris laboris sunt irure elit commodo ea veniam ut. Velit proident amet exercitation laboris excepteur sunt nisi officia exercitation id Lorem elit. Nulla sunt deserunt excepteur ea eiusmod fugiat pariatur proident non proident. Nulla ea officia veniam do duis aliqua ullamco exercitation ex nisi anim. Anim culpa aliquip veniam ea sint. Aliquip elit cupidatat nisi in ullamco.",
       "details": "Incididunt in aute aliqua cupidatat cillum ex dolore nostrud ad amet magna elit nulla do. Minim veniam sit ullamco quis id quis consectetur ullamco est. Consectetur velit fugiat laborum voluptate excepteur aliquip tempor eiusmod mollit dolore.",
       "images": [
-        "/images/bikes/vintage/bike-vintage-4.jpg"
+        "/images/bikes/vintage/bike-vintage-4-1.jpg",
+        "/images/bikes/vintage/bike-vintage-4-2.jpg",
+        "/images/bikes/vintage/bike-vintage-4-3.jpg",
+        "/images/bikes/vintage/bike-vintage-4-4.jpg"
       ],
       "color": [
         "Red",
@@ -427,7 +483,11 @@
         "mollit culpa id laborum eiusmod ad"
       ],
       "brand": "Zillactic",
-      "types": 3,
+      "types": {
+        "id": 3,
+        "value": "old",
+        "label": "Bicicletas antiguas"
+      },
       "sizes": [
         "XXS",
         "M",
@@ -453,9 +513,10 @@
       "label": "Bicicletas eléctricas"
     },
     {
-      "id": 2,
+      "id": 3,
       "value": "old",
       "label": "Bicicletas antiguas"
     }
-  ]
+  ],
+  "booking": []
 }

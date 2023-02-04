@@ -91,3 +91,31 @@ npm run dev
 ```
 http://localhost:5173/
 ```
+
+## After the save book
+
+For check the item saved check url
+
+```
+http://localhost:3004/booking
+```
+
+# Aclarations
+
+### Structure Project
+
+The modules and technologies used:
+
+- Clean Code structure
+- Redux and Redux Toolkit (app data management)
+- React Query (for request cache and request data management)
+- React Hook Form (management data form)
+- Tailwind (CSS Framework)
+- Tailwind UI (Components Tailwind)
+- React Datepicker (selector date picker)
+- TypeScript (Type safe)
+- axios
+
+### Diagram
+
+![Product_Png](https://raw.githubusercontent.com/ankalago/growpro-test/main/flowchart-booking-bikes.png)

@@ -18,7 +18,6 @@ const Bike: React.FC<Props> = () => {
   const { status, data, error } = useQueryDataBike(slug)
   const { calculateBooking } = useBooking()
   const bookingState = useSelector((store: AppStore) => store.booking)
-  const dispatch = useDispatch()
 
   if (status === 'loading') {
     return <span>Loading...</span>
@@ -31,10 +30,6 @@ const Bike: React.FC<Props> = () => {
   const [{ types, name, images, reviews, description, highlights, details, color, sizes }] = data
 
   const calculateBookingValue = calculateBooking(bookingState.selectDates, types);
-
-  useEffect(() => {
-    dispatch(setCostBooking(calculateBookingValue.calculateValue.value))
-  }, [calculateBookingValue.calculateValue.value])
 
   return (
     <div className="bg-white">
@@ -65,7 +60,7 @@ const Bike: React.FC<Props> = () => {
             {/* Reviews */}
             <Reviews reviews={reviews} />
 
-            <Booking color={color} sizes={sizes}/>
+            <Booking color={color} sizes={sizes} types={types}/>
           </div>
 
           {/* Description and details */}

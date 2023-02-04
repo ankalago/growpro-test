@@ -88,7 +88,7 @@
     {
       "id": 3,
       "name": "Trek Marlin 6",
-      "slug": "Trek-marlin-6",
+      "slug": "trek-marlin-6",
       "description": "Officia commodo voluptate nulla velit cupidatat id exercitation esse laborum mollit esse sint. Exercitation deserunt dolore irure occaecat. Anim in laboris nostrud culpa proident culpa qui duis amet quis. Adipisicing in anim sint veniam voluptate ad nostrud. Qui ad veniam cillum occaecat laborum. Qui dolor sint Lorem occaecat minim eiusmod minim aute laboris Lorem reprehenderit aliquip.",
       "details": "Amet deserunt elit ad proident. Proident incididunt nisi consequat cillum mollit. Occaecat pariatur tempor amet magna. Deserunt fugiat ex exercitation excepteur dolor laborum ipsum tempor sit in reprehenderit. Id elit ad est adipisicing nostrud incididunt. Cillum enim deserunt cupidatat ex sunt magna id officia occaecat incididunt elit. Ex ut anim ullamco eu enim.",
       "images": [
@@ -533,21 +533,5 @@
       "daysPromo": 5
     }
   ],
-  "booking": [
-    {
-      "days": 8,
-      "cost": 60,
-      "color": "Orange",
-      "size": "S",
-      "name": "Paúl Jácome",
-      "email": "ankalago@gmail.com",
-      "phone": "0998342013",
-      "selectDates": {
-        "startDate": "2023-2-3",
-        "endDate": "2023-2-10"
-      },
-      "createAt": 1675460673280,
-      "id": 1
-    }
-  ]
+  "booking": []
 }

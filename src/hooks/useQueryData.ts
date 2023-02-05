@@ -1,7 +1,7 @@
 import { useQuery } from '@tanstack/react-query';
 import { BikeType, Types } from '../entities/bike';
 import { QUERY_KEY_BIKE, QUERY_KEY_BIKES, QUERY_KEY_TYPES } from '../constants';
-import { fetchDataBikeById, fetchDataBikes, fetchDataType } from '../services';
+import { fetchDataBikeById, fetchDataBikes, fetchDataType } from '../services/services';
 import { UseQueryResult } from '@tanstack/react-query/src/types';
 
 export const useQueryDataTypes = (): UseQueryResult<Types[], any> => {

@@ -1,6 +1,6 @@
 import axios from 'axios';
-import { BikeType, Types } from './entities/bike';
-import { BASE_ENDPOINT } from './constants';
+import { BikeType, Types } from '../entities/bike';
+import { BASE_ENDPOINT } from '../constants';
 import { QueryFunctionContext } from '@tanstack/query-core/src/types';
 
 export const fetchDataBikes = ({ queryKey }: QueryFunctionContext<string[]>): Promise<BikeType[]> => {

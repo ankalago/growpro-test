@@ -1,5 +1,5 @@
 import { useMutation } from '@tanstack/react-query';
-import { postDataBooking } from '../services';
+import { postDataBooking } from '../services/services';
 import { UseMutationResult } from '@tanstack/react-query/src/types';
 
 export const useMutationDataBooking = (): UseMutationResult<any, any, any, any> => {

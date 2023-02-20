@@ -7,7 +7,8 @@ import { DateValueType } from 'react-tailwindcss-datepicker/dist/types';
 import { useDispatch, useSelector } from 'react-redux';
 import {
   createBooking,
-  resetBooking, selectEmptyState,
+  resetBooking,
+  selectEmptyState,
   setCostBooking,
   setDaysBooking,
   setSelectDatesBooking
@@ -33,7 +34,7 @@ const Booking: React.FC<Props> = ({color, sizes, types}) => {
   const [openModal, setOpenModal] = useState(false)
   const [openSuccessModal, setOpenSuccessModal] = useState(false)
   const dispatch = useDispatch();
-  const { register, handleSubmit, watch, formState: { errors }, setValue, reset } = useForm<BookingType>();
+  const { register, handleSubmit, formState: { errors }, setValue, reset } = useForm<BookingType>();
   const mutation = useMutationDataBooking()
   const bookingState = useSelector((store: AppStore) => store.booking)
   const { calculateBooking } = useBooking()
@@ -65,14 +66,14 @@ const Booking: React.FC<Props> = ({color, sizes, types}) => {
   }
 
   register('color', { required: true, value: color[0] })
-  register('size', { required: true, value: sizes[sizes.length - 1] })
-  register('selectDates', { required: true })
+  register('size', { required: true, value: sizes[0] })
+  register('selectDates', { required: true, validate: (value) => value?.startDate !== null && value?.endDate !== null })
 
   return (
     <>
       <Modal open={openModal} setOpen={setOpenModal} okAction={handleOkAction}><BookingConfirmation /></Modal>
       <Modal open={openSuccessModal} setOpen={setOpenSuccessModal} okAction={() => setOpenSuccessModal(false)} footer={false}><BookingSuccess/></Modal>
-      <form className="mt-5"  onSubmit={handleSubmit(onSubmit)}>
+      <form className="mt-5"  onSubmit={handleSubmit(onSubmit)} autoComplete="off">
         {/* Colors */}
         <div>
           <h3 className="text-sm font-medium text-gray-900">Color</h3>
@@ -141,8 +142,8 @@ const Booking: React.FC<Props> = ({color, sizes, types}) => {
             onChange={handleDatesChange}
             placeholder="Select Dates"
             inputClassName={classNames(
-              errors.selectDates ? "dark:border-rose-500 dark:border-2": "dark:border-gray-300",
-              "font-normal dark:bg-white dark:border dark:shadow-sm dark:text-gray-900"
+              errors.selectDates ? "dark:border-rose-500 dark:border-2": "dark:border dark:border-gray-300",
+              "font-normal dark:bg-white dark:shadow-sm dark:text-gray-900"
             )}
             containerClassName="mt-4"
           />

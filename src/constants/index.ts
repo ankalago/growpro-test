@@ -18,3 +18,7 @@ export const SIZES = [
   '2XL',
   '3XL'
 ]
+
+export const BASE_VALUE = 10
+
+export const BASE_VALUE_FORTNIGHT = 12

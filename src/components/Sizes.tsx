@@ -10,7 +10,7 @@ type Props = {
 }
 
 const Sizes: React.FC<Props> = ({ sizes, setValue }) => {
-  const [selectedSize, setSelectedSize] = useState<string>(sizes[sizes.length - 1])
+  const [selectedSize, setSelectedSize] = useState<string>(sizes[0])
 
   useEffect(() => {
     setValue('size', selectedSize)

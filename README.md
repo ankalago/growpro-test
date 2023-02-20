@@ -77,7 +77,7 @@ npm ci
 https://github.com/typicode/json-server
 
 ```
-npx json-server --watch server/db.json --port 3004 --nc
+npx json-server --watch server/db.json --no-cors --port 3004
 ```
 
 ## Run App

@@ -3,6 +3,7 @@ import { Types } from '../entities/bike';
 import dayjs from 'dayjs';
 import { CalculateBookingType } from '../entities/booking';
 import { calculateDaysBooking } from '../utils/booking';
+import { BASE_VALUE, BASE_VALUE_FORTNIGHT } from '../constants';
 
 export const useBooking = () => {
 
@@ -19,13 +20,14 @@ export const useBooking = () => {
   const calculateBooking = (selectDates: DateValueType, type: Types): CalculateBookingType => {
     const calculateDaysBookingReservation = calculateDaysBooking(selectDates);
     const daysBooking = calculateDaysBookingReservation.daysBooking
-    const valueOfBooking = Number(dayjs(calculateDaysBookingReservation.startDate).format("D")) >= 15 ? 12 : 10
+    const valueOfBooking = Number(dayjs(calculateDaysBookingReservation.startDate).format("D")) >= 15 ?
+      BASE_VALUE_FORTNIGHT : BASE_VALUE
     const daysToBooking = calculateDaysToBooking(daysBooking, type)
     const calculateValue = calculateValueBooking(valueOfBooking, daysToBooking)
     return {
       daysBooking: {
         value: daysBooking,
-        label: `by ${daysBooking} day${daysBooking > 1 ? 's': ''}`
+        label: `by ${daysBooking} day${daysBooking > 1 ? 's' : ''}`
       },
       calculateValue: {
         value: calculateValue,

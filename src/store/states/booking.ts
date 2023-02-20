@@ -1,10 +1,11 @@
 import { BookingType } from '../../entities/booking';
 import { createSlice } from '@reduxjs/toolkit';
+import dayjs from 'dayjs';
 
 
 export const selectEmptyState = {
-  startDate: new Date(),
-  endDate: new Date()
+  startDate: dayjs(new Date()).format("YYYY-MM-DD"),
+  endDate: dayjs(new Date()).format("YYYY-MM-DD")
 }
 
 export const bookingEmptyState: BookingType = {

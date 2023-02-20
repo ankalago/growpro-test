@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
                     />
                   </div>
                   <Link to={`/bicycle/${bike.slug}`} className="mt-6 block font-medium text-gray-900">
-                    <span className="absolute inset-0 z-10" aria-hidden="true"/>
+                    <span className="absolute inset-0" aria-hidden="true"/>
                     {bike.name}
                   </Link>
                 </div>
